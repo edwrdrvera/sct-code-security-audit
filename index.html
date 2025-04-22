@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Photo Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mars Photo Explorer</h1>
+    </header>
+    <main>
+        <div class="top-bar">
+            <div class="date-container">
+                <label for="earth-date" id="earth-date-label">Earth Date:</label>
+                <input type="date" id="earth-date" name="earth-date" aria-label="Select Earth Date">
+            </div>
+            <button id="load-button" aria-label="Load Mars Photos">Load Photos</button>
+        </div>
+        <div class="photo-gallery" id="photo-gallery" aria-live="polite"></div>
+    </main> 
+    <script src="script.js" type="module"></script>
+</body>
+</html>
